@@ -8,8 +8,19 @@ li {
     border: 3px solid black;
 }
 
-.button {
-    text-align: center;
-    display: inline-flexbox;
-    align-items: center;
+body {
+    height: 100%;
+    width: auto;
+    padding: 10px;
+}
+img {
+    display: flex-box;
+    height: auto;
+    width: auto;
+}
+
+#scoreboard {
+    width: 40%;
+    display: grid;
+    align-self: center;
 }

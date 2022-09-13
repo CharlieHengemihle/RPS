@@ -9,9 +9,7 @@ let losses = 0;
 let computer = '';
 let pick = '';
 /* Actions */
-function loadPage(
-    displayScoreboard();
-) {}
+function loadPage() {}
 
 /* Components */
 const rogueButton = document.getElementById('rogue-button');
@@ -29,8 +27,8 @@ sorcererButton.addEventListener('click', () => {
     handleFight('sorcerer');
 });
 
-function handleFight(pick) {
-    computer = getRandomItem(fighers);
+function handleFight() {
+    computer = getRandomItem(fighters);
     const result = score(pick, computer);
     if (result === 1) {
         wins++;
@@ -48,12 +46,15 @@ const totalDisplay = document.getElementById('total-display');
 
 const winsDisplay = document.getElementById('wins-display');
 
+const drawsDisplay = document.getElementById('draws-dispaly');
+
 const lossesDisplay = document.getElementById('losses-display');
 
 function displayScoreboard() {
     totalDisplay.textContent = total;
     winsDisplay.textContent = wins;
     lossesDisplay.textContent = losses;
+    drawsDisplay.textContent = draws;
 }
 
 // function getRandomItem(array) {

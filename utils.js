@@ -8,11 +8,7 @@ export function getRandomItem(fighters) {
     return item;
 }
 
-export function getRandomItem(array) {
-    const random = Math.floor(Math.random() * array.length);
-    const item = array[random];
-    return item;
-}
+let fighters = ['rogue', 'paladin', 'sorcerer'];
 
 export function score(pick, computer) {
     if (pick === 'rogue' && computer === 'sorceror') {
