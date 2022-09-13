@@ -2,13 +2,11 @@ export function getRandomNumber(choices) {
     return Math.floor(Math.random() * choices);
 }
 
-export function getRandomItem(fighters) {
-    const random = getRandomNumber(fighters.length);
-    const item = fighters[random];
+export function getRandomItem(array) {
+    const random = getRandomNumber(array.length);
+    const item = array[random];
     return item;
 }
-
-let fighters = ['rogue', 'paladin', 'sorcerer'];
 
 export function score(pick, computer) {
     if (pick === 'rogue' && computer === 'sorceror') {

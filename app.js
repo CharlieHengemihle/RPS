@@ -1,6 +1,5 @@
 import { getRandomItem, score } from './utils.js';
 
-/* State */
 let fighters = ['rogue', 'paladin', 'sorcerer']; //rogue paladin sorcerer
 let total = 0;
 let wins = 0;
@@ -8,10 +7,7 @@ let draws = 0;
 let losses = 0;
 let computer = '';
 let pick = '';
-/* Actions */
-function loadPage() {}
 
-/* Components */
 const rogueButton = document.getElementById('rogue-button');
 rogueButton.addEventListener('click', () => {
     handleFight('rogue');
@@ -27,9 +23,10 @@ sorcererButton.addEventListener('click', () => {
     handleFight('sorcerer');
 });
 
-function handleFight() {
+function handleFight(pick) {
     computer = getRandomItem(fighters);
     const result = score(pick, computer);
+
     if (result === 1) {
         wins++;
     }
@@ -40,13 +37,14 @@ function handleFight() {
         losses++;
     }
     total++;
+    displayScoreboard();
 }
 
 const totalDisplay = document.getElementById('total-display');
 
 const winsDisplay = document.getElementById('wins-display');
 
-const drawsDisplay = document.getElementById('draws-dispaly');
+const drawsDisplay = document.getElementById('draws-display');
 
 const lossesDisplay = document.getElementById('losses-display');
 
@@ -84,10 +82,3 @@ function displayScoreboard() {
 //     }
 //     return 0;
 // }
-/* Component */
-// get DOM
-// display
-// event listeners
-
-/* Run page load code */
-loadPage();
