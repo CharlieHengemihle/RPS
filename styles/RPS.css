@@ -1,5 +1,15 @@
 #fighters {
     display: inline-flex;
-    width: fit-content;
-    height: fit-content;
+    width: auto;
+    height: auto;
+}
+
+li {
+    border: 3px solid black;
+}
+
+.button {
+    text-align: center;
+    display: inline-flexbox;
+    align-items: center;
 }
