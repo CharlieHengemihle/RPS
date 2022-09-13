@@ -1,6 +1,8 @@
 /* Imports */
 
 /* State */
+let gameState = ''; //pick or results
+let guess = ['rogue', 'paladin', 'sorcerer']; //rogue paladin sorcerer
 
 /* Actions */
 function loadPage() {}
