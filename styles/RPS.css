@@ -2,29 +2,37 @@
     display: inline-flex;
     width: auto;
     height: auto;
+    margin-inline: auto;
+}
+header {
+    margin-inline: auto;
 }
 
 #sorc-pic {
-    height: 75%;
-    width: 75%;
+    height: 95%;
+    width: 95%;
     background-color: coral;
+    margin-inline: auto;
 }
 #pally-pic {
-    height: 75%;
-    width: 75%;
+    height: 95%;
+    width: 95%;
     background-color: gold;
+    margin-inline: auto;
 }
 #rogue-pic {
-    height: 75%;
-    width: 75%;
+    height: 95%;
+    width: 95%;
     background-color: slategray;
+    margin-inline: auto;
 }
 
-.button {
+button {
     display: grid;
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: fit-content;
+    margin-inline: auto;
 }
 
 li {
@@ -32,6 +40,10 @@ li {
     height: 90%;
     width: 90%;
     align-content: center;
+}
+#play-again {
+    display: inline-flex;
+    margin-inline: auto;
 }
 .display {
     display: grid;
@@ -57,6 +69,7 @@ img {
     width: 40%;
     display: grid;
     align-self: center;
+    margin-inline: auto;
 }
 
 main {
@@ -65,4 +78,8 @@ main {
 
 h2 {
     text-align: center;
+}
+
+.hidden {
+    display: none !important;
 }

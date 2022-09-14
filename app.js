@@ -7,7 +7,11 @@ let draws = 0;
 let losses = 0;
 let computer = '';
 let pick = '';
-let gameState = '';
+let gameState = 'results';
+
+let rogue = document.getElementById('Rogue');
+let paladin = document.getElementById('Paladin');
+let sorcerer = document.getElementById('Sorcerer');
 
 const rogueButton = document.getElementById('rogue-button');
 rogueButton.addEventListener('click', () => {
@@ -24,10 +28,20 @@ sorcererButton.addEventListener('click', () => {
     handleFight('sorcerer');
 });
 
+const againButton = document.getElementById('AgainButton');
+againButton.addEventListener('click', () => {
+    gameState = 'home';
+    if ((gameState = 'home')) {
+        rogueButton.classList.remove('hidden');
+        paladinButton.classList.remove('hidden');
+        sorcererButton.classList.remove('hidden');
+        againButton.classList.add('hidden');
+    }
+});
+
 function handleFight(pick) {
     computer = getRandomItem(fighters);
     const result = score(pick, computer);
-    console.log(computer);
 
     if (result === 1) {
         wins++;
@@ -41,11 +55,19 @@ function handleFight(pick) {
     total++;
     displayScoreboard();
     gameState = 'results';
+    if ((gameState = 'results')) {
+        rogueButton.classList.add('hidden');
+        paladinButton.classList.add('hidden');
+        sorcererButton.classList.add('hidden');
+        againButton.classList.remove('hidden');
+    }
 }
 
-function displayFight() {
-    if ((gameState = 'results')) {
-    }
+if ((gameState = 'home')) {
+    rogueButton.classList.remove('hidden');
+    paladinButton.classList.remove('hidden');
+    sorcererButton.classList.remove('hidden');
+    againButton.classList.add('hidden');
 }
 
 const totalDisplay = document.getElementById('total-display');
