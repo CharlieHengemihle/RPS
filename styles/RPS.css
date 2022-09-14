@@ -2,7 +2,6 @@
     display: inline-flex;
     width: auto;
     height: auto;
-    margin-inline: auto;
 }
 header {
     margin-inline: auto;
@@ -12,19 +11,16 @@ header {
     height: 95%;
     width: 95%;
     background-color: coral;
-    margin-inline: auto;
 }
 #pally-pic {
     height: 95%;
     width: 95%;
     background-color: gold;
-    margin-inline: auto;
 }
 #rogue-pic {
     height: 95%;
     width: 95%;
     background-color: slategray;
-    margin-inline: auto;
 }
 
 button {

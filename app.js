@@ -6,12 +6,12 @@ let wins = 0;
 let draws = 0;
 let losses = 0;
 let computer = '';
-let pick = '';
+// let pick = '';
 let gameState = 'results';
 
-let rogue = document.getElementById('Rogue');
-let paladin = document.getElementById('Paladin');
-let sorcerer = document.getElementById('Sorcerer');
+// let rogue = document.getElementById('Rogue');
+// let paladin = document.getElementById('Paladin');
+// let sorcerer = document.getElementById('Sorcerer');
 
 const rogueButton = document.getElementById('rogue-button');
 rogueButton.addEventListener('click', () => {
