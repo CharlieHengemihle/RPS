@@ -1,0 +1,81 @@
+#fighters {
+    display: inline-flex;
+    width: auto;
+    height: auto;
+}
+header {
+    margin-inline: auto;
+}
+
+#sorc-pic {
+    height: 95%;
+    width: 95%;
+    background-color: coral;
+}
+#pally-pic {
+    height: 95%;
+    width: 95%;
+    background-color: gold;
+}
+#rogue-pic {
+    height: 95%;
+    width: 95%;
+    background-color: slategray;
+}
+
+button {
+    display: grid;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: fit-content;
+    margin-inline: auto;
+}
+
+li {
+    border: 3px solid black;
+    height: 90%;
+    width: 90%;
+    align-content: center;
+}
+#play-again {
+    display: inline-flex;
+    margin-inline: auto;
+}
+.display {
+    display: grid;
+    height: 55px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.scores {
+    display: inline-flex;
+}
+body {
+    height: 100%;
+    width: auto;
+    padding: 10px;
+}
+img {
+    display: flex-box;
+    height: auto;
+    width: auto;
+}
+
+#scoreboard {
+    width: 40%;
+    display: grid;
+    align-self: center;
+    margin-inline: auto;
+}
+
+main {
+    display: grid;
+}
+
+h2 {
+    text-align: center;
+}
+
+.hidden {
+    display: none !important;
+}

@@ -1,40 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <!-- metadata -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <!-- metadata -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- title and favicon -->
+        <title>Web App</title>
+        <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
 
-    <!-- title and favicon -->
-    <title>Web App</title>
-    <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
+        <!-- js -->
+        <script type="module" src="app.js"></script>
 
-    <!-- js -->
-    <script type="module" src="app.js"></script>
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap"
+        />
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
+        <!-- css -->
+        <link rel="stylesheet" href="/styles/reset.css" />
+        <link rel="stylesheet" href="/styles/RPS.css" />
+        <link rel="stylesheet" href="/styles/global.css" />
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="/styles/reset.css" />
-    <link rel="stylesheet" href="/styles/global.css" />
-</head>
+    <body>
+        <header>
+            <h1>RPS: The Ultimate Dual</h1>
+        </header>
 
-<body>
-    <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
-    </header>
-
-    <main>
-
-    </main>
-
-</body>
-
+        <main>
+            <section id="fighters">
+                <ul id="fighters">
+                    <li id="Rogue">
+                        <img id="rogue-pic" src="assets/rogue.png" alt="A shady one" />
+                        <button id="rogue-button" class="button">Rogue</button>
+                    </li>
+                    <li id="Paladin">
+                        <img id="pally-pic" src="assets/paladin.png" />
+                        <button id="pally-button" class="button">Paladin</button>
+                    </li>
+                    <li id="Sorcerer">
+                        <img id="sorc-pic" src="assets/sorcerer.png" />
+                        <button id="sorc-button" class="button">Sorcerer</button>
+                    </li>
+                </ul>
+            </section>
+            <div id="play-again">
+                <button id="AgainButton" class="button hidden">Play Again</button>
+            </div>
+            <section id="scoreboard">
+                <h2>Scoreboard</h2>
+                <ul class="scores">
+                    <li class="display">total: <span id="total-display"></span></li>
+                    <li class="display">losses: <span id="losses-display"></span></li>
+                    <li class="display">draws: <span id="draws-display"></span></li>
+                    <li class="display">wins: <span id="wins-display"></span></li>
+                </ul>
+            </section>
+            <section>
+                <div id="chosen-fighter"></div>
+                <div id="opponent"></div>
+            </section>
+        </main>
+    </body>
 </html>
