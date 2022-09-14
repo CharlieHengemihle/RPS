@@ -31,7 +31,7 @@ sorcererButton.addEventListener('click', () => {
 const againButton = document.getElementById('AgainButton');
 againButton.addEventListener('click', () => {
     gameState = 'home';
-    if ((gameState = 'home')) {
+    if (gameState === 'home') {
         rogueButton.classList.remove('hidden');
         paladinButton.classList.remove('hidden');
         sorcererButton.classList.remove('hidden');
@@ -55,7 +55,7 @@ function handleFight(pick) {
     total++;
     displayScoreboard();
     gameState = 'results';
-    if ((gameState = 'results')) {
+    if (gameState === 'results') {
         rogueButton.classList.add('hidden');
         paladinButton.classList.add('hidden');
         sorcererButton.classList.add('hidden');
@@ -63,7 +63,7 @@ function handleFight(pick) {
     }
 }
 
-if ((gameState = 'home')) {
+if (gameState === 'home') {
     rogueButton.classList.remove('hidden');
     paladinButton.classList.remove('hidden');
     sorcererButton.classList.remove('hidden');
