@@ -9,10 +9,10 @@ export function getRandomItem(array) {
 }
 
 export function score(pick, computer) {
-    if (pick === 'rogue' && computer === 'sorceror') {
+    if (pick === 'rogue' && computer === 'sorcerer') {
         return 1;
     }
-    if (pick === 'sorceror' && computer === 'paladin') {
+    if (pick === 'sorcerer' && computer === 'paladin') {
         return 1;
     }
     if (pick === 'paladin' && computer === 'rogue') {
@@ -21,11 +21,12 @@ export function score(pick, computer) {
     if (pick === 'rogue' && computer === 'paladin') {
         return -1;
     }
-    if (pick === 'sorceror' && computer === 'rogue') {
+    if (pick === 'sorcerer' && computer === 'rogue') {
         return -1;
     }
-    if (pick === 'paladin' && computer === 'sorceror') {
+    if (pick === 'paladin' && computer === 'sorcerer') {
         return -1;
+    } else {
+        return 0;
     }
-    return 0;
 }

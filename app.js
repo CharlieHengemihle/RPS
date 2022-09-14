@@ -7,6 +7,7 @@ let draws = 0;
 let losses = 0;
 let computer = '';
 let pick = '';
+let gameState = '';
 
 const rogueButton = document.getElementById('rogue-button');
 rogueButton.addEventListener('click', () => {
@@ -26,6 +27,7 @@ sorcererButton.addEventListener('click', () => {
 function handleFight(pick) {
     computer = getRandomItem(fighters);
     const result = score(pick, computer);
+    console.log(computer);
 
     if (result === 1) {
         wins++;
@@ -38,6 +40,12 @@ function handleFight(pick) {
     }
     total++;
     displayScoreboard();
+    gameState = 'results';
+}
+
+function displayFight() {
+    if ((gameState = 'results')) {
+    }
 }
 
 const totalDisplay = document.getElementById('total-display');
@@ -54,31 +62,3 @@ function displayScoreboard() {
     lossesDisplay.textContent = losses;
     drawsDisplay.textContent = draws;
 }
-
-// function getRandomItem(array) {
-//     const random = Math.floor(Math.random() * array.length);
-//     const item = array[random];
-//     return item;
-// }
-
-// function score(pick, computer) {
-//     if (pick === 'rogue' && computer === 'sorceror') {
-//         return 1;
-//     }
-//     if (pick === 'sorceror' && computer === 'paladin') {
-//         return 1;
-//     }
-//     if (pick === 'paladin' && computer === 'rogue') {
-//         return 1;
-//     }
-//     if (pick === 'rogue' && computer === 'paladin') {
-//         return -1;
-//     }
-//     if (pick === 'sorceror' && computer === 'rogue') {
-//         return -1;
-//     }
-//     if (pick === 'paladin' && computer === 'sorceror') {
-//         return -1;
-//     }
-//     return 0;
-// }

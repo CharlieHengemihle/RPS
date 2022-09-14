@@ -4,10 +4,44 @@
     height: auto;
 }
 
-li {
-    border: 3px solid black;
+#sorc-pic {
+    height: 75%;
+    width: 75%;
+    background-color: coral;
+}
+#pally-pic {
+    height: 75%;
+    width: 75%;
+    background-color: gold;
+}
+#rogue-pic {
+    height: 75%;
+    width: 75%;
+    background-color: slategray;
 }
 
+.button {
+    display: grid;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: fit-content;
+}
+
+li {
+    border: 3px solid black;
+    height: 90%;
+    width: 90%;
+    align-content: center;
+}
+.display {
+    display: grid;
+    height: 55px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.scores {
+    display: inline-flex;
+}
 body {
     height: 100%;
     width: auto;
@@ -23,4 +57,12 @@ img {
     width: 40%;
     display: grid;
     align-self: center;
+}
+
+main {
+    display: grid;
+}
+
+h2 {
+    text-align: center;
 }
