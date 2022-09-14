@@ -8,14 +8,14 @@ export function getRandomItem(array) {
     return item;
 }
 
-let rogue = document.getElementById('Rogue');
-let paladin = document.getElementById('Paladin');
-let sorcerer = document.getElementById('Sorcerer');
+// let rogue = document.getElementById('Rogue');
+// let paladin = document.getElementById('Paladin');
+// let sorcerer = document.getElementById('Sorcerer');
 
 export function score(pick, computer) {
     if (pick === 'rogue' && computer === 'sorcerer') {
         return 1;
-        paladin.classList.add('hidden');
+        // paladin.classList.add('hidden');
     }
     if (pick === 'sorcerer' && computer === 'paladin') {
         return 1;
